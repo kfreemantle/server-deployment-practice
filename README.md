@@ -8,9 +8,12 @@ Problem Domain: Learning about proper server deployment
 
 Links and Resources
 
-- (GitHub Actions)[https://github.com/kfreemantle/server-deployment-practice/actions]
+- [GitHub Actions](https://github.com/kfreemantle/server-deployment-practice/actions)
 
-- (Back-end server)[https://server-deployment-practice-6o3w.onrender.com]
+- [Back-end server](https://server-deployment-practice-6o3w.onrender.com)
 
 Setup .env requirements: requiring PORT=3001 in .env.
 
+#### UML
+
+![UML](./assets/lab01UML.png)
