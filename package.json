@@ -1,14 +1,14 @@
 {
   "name": "server-deployment-practice",
   "version": "1.0.0",
-  "description": "Lab01: Practice with server deployments and error checking.",
+  "description": "Module 1 - lab01-04.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jest --verbose"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kyle Freemantle",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

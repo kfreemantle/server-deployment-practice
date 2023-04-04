@@ -1,6 +1,8 @@
 'use strict'
 
-const app = require('./server');
+require('dotenv').config(); // first all these environmental variables are loaded
+
+const app = require('./src/server');
 
 // Listening on port 3001, and printing a message to the console that it's up and listening if it runs successfully.
 let URL = process.env.PORT;

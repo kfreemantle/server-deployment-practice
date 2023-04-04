@@ -1,13 +1,26 @@
 'use strict'
-require('dotenv').config();
+
 
 const express = require('express');
 const cors = require('cors');
-const allCaps = require('./allCaps/allCaps');
+const allCaps = require('../middleware/allCaps/allCaps.js');
 
 const app = express();  // this is called a singleton
 
 app.use(cors());
+
+// basic middleware for console logs. middlware in express follows the req/res/next format
+function logger(request, response, next) {
+  console.log('Express app hit!');
+  next();
+}
+
+// app.use means it runs at the application level, meaning it runs no matter what route is being used in the request
+app.use(logger);
+
+app.post('/message', (request, response, next) => {
+  response.send('You\'ve hit the message route.');
+});
 
 
 app.get('/allCaps', function(request, response, next) {
