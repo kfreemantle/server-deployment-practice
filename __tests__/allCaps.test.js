@@ -1,6 +1,8 @@
+'use strict';
+
 // per class, this is called Dependency Injection or importing.  We need to import the function we want to test into our testing file for Jest to work properly.
 
-const allCaps = require('./allCaps');
+const allCaps = require('../middleware/allCaps/allCaps');
 
 // describe, test and expect are methods attached to the core Jest functionality
 
